@@ -1,0 +1,61 @@
+.container-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  height: auto;
+  width: 80%;
+}
+
+.container-contact div:first-child {
+  grid-row: span 3;
+}
+
+section h2 {
+  font-family: "Helvetica", sans-serif;
+  color: #ee4036;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.phone,
+.localisation,
+.email, .horaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 15px;
+  grid-gap: 10px;
+  text-justify: auto;
+  background-color: #DAD7CD;
+  border-radius: 15px;
+}
+
+.horaire p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.call-btn {
+  height: 50px;
+  width: 220px;
+  background-color: #37b34a;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.call-btn i {
+  margin-right: 10px;
+}
