@@ -7,20 +7,20 @@
   padding-bottom: 60px;
   height: auto;
   width: 80%;
+  grid-template-areas: 
+  "localisation phone"
+  "localisation horaire"
+  "localisation email";
 }
-
 .container-contact div:first-child {
   grid-row: span 3;
 }
-
 section h2 {
   font-family: "Helvetica", sans-serif;
   color: #ee4036;
   word-spacing: 5px;
-  letter-spacing: 5px;
   font-size: 30px;
 }
-
 .phone,
 .localisation,
 .email, .horaire {
@@ -35,13 +35,23 @@ section h2 {
   background-color: #DAD7CD;
   border-radius: 15px;
 }
-
+.horaire {
+  grid-area: horaire;
+}
+.phone {
+  grid-area: phone;
+}
+.localisation {
+  grid-area: localisation;
+}
+.email {
+  grid-area: email;
+}
 .horaire p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
-
 .call-btn {
   height: 50px;
   width: 220px;
@@ -55,7 +65,29 @@ section h2 {
   font-size: 20px;
   cursor: pointer;
 }
-
 .call-btn i {
   margin-right: 10px;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .container-contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    "horaire"
+    "phone"
+    "localisation"
+    "email";
+  }
+  .container-contact div:first-child {
+    grid-row: span 1;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 }

@@ -34,14 +34,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 200px;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 150px;
   width: 100%;
 }
 
 header img {
-  height: 197px;
+  height: 147px;
 }
 
 nav {
@@ -52,10 +52,14 @@ nav {
   width: 500;
 }
 
+.menu {
+  display: flex;
+  grid-gap: 20px;
+}
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
-  grid-gap: 20px;
 }
 
 nav ul li {
@@ -63,12 +67,52 @@ nav ul li {
 }
 
 nav ul li a {
+  display: inline-block;
   text-decoration: none;
   font-family: "Helvetica", sans-serif;
-  font-size: 36px;
-  letter-spacing: 2px;
+  font-size: 26px;
   color: #37b34a;
   cursor: pointer;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #37b34a;
+  transition: 0.15s ease-in-out;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.open-menu, .close-menu {
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+.open-menu {
+  top: 75px;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 70px;
+  right: 50px;
+}
+
+#check {
+  display: none;
 }
 
 /* Section */
@@ -78,18 +122,12 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   color: #ee4036;
-  /* word-spacing: 15px; */
-  /* letter-spacing: 8px; */
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h3 {
   font-family: "Helvetica", sans-serif;
   text-transform: uppercase;
-}
-
-.info {
-  height: 100px;
 }
 
 /* Footer */
@@ -132,11 +170,49 @@ footer div ul li a {
   cursor: pointer;
 }
 
-/*
-couleurs du logo :
-Vert pastel foncé : #37b34a
-Vermillon: #ee4036
-Couleurs qui se marient bien avec les coulleurs logo:
-Loup des bois: #DAD7CD
-jet: #373737
-*/
+@media (max-width: 994px) {
+  nav ul li a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    height: 120px;
+    padding-left: 30px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .open-menu, .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer div {
+    width: 100%;
+    padding: 30px;
+    grid-gap: 15px;
+  }
+  
+}

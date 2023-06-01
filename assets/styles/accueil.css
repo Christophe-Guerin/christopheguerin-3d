@@ -2,17 +2,16 @@
 
 .banner {
   position: relative;
-  height: 600px;
+  height: 500px;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   background-image: url("/assets/images/GohanJesse_Create_a_realistic_image_of_a_professional_pest_cont_819f6f1a-a855-4257-bd22-a7074ce938d9.png");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
-
 .banner::before {
   content: "";
   position: absolute;
@@ -23,7 +22,6 @@
   background-color: rgba(0, 0, 0, 0.5); /* Opacité de 60% */
   z-index: 0;
 }
-
 .banner-container-tags {
   display: flex;
   flex-direction: column;
@@ -35,22 +33,28 @@
   grid-gap: 25px;
   z-index: +1;
 }
-
 .banner h2 {
   color: white;
   font-size: 50px;
   font-weight: 400;
+}
+.banner-container-img {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: +1;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 /********* Bande d'appel *********/
 
 .call-band {
   display: flex;
-  justify-content: space-around;
-  height: 250px;
+  height: 200px;
   width: 100%;
 }
-
 .call-btn-bloc {
   display: flex;
   flex-direction: column;
@@ -61,7 +65,6 @@
   grid-gap: 20px;
   background-color: #37b34a;
 }
-
 .call-btn {
   display: inline-block;
   height: 50px;
@@ -72,14 +75,13 @@
   border-radius: 50px;
   text-align: center;
   line-height: 40px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
+  cursor: pointer;
 }
-
 .call-btn i {
   margin-right: 10px;
 }
-
 .call-info {
   width: 50%;
   display: flex;
@@ -89,27 +91,22 @@
   grid-gap: 20px;
   background-color: #dad7cd;
 }
-
 .call-btn-bloc h3,
 .call-info h3 {
   font-family: "Helvetica", sans-serif;
   font-size: 40px;
 }
-
 .call-btn-bloc h3 {
   color: white;
 }
-
-
 .call-info h3 {
   color: #ee4036;
 }
-
 .call-info p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: black;
-  padding-left: 30px;
+  padding: 0 15px;
 }
 
 /********* Préstation *********/
@@ -120,23 +117,20 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 75px;
+  padding-bottom: 70px;
 }
-
 .prestation h3 {
   padding-bottom: 40px;
   font-family: "Helvetica", sans-serif;
   color: #ee4036;
   font-size: 40px;
 }
-
 .Container-card {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -148,12 +142,11 @@
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
+  cursor: pointer;
 }
-
 .card img {
   height: 232px;
 }
-
 .card span {
   font-family: "helvetica", sans-serif;
   font-size: 28px;
@@ -168,14 +161,12 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 40px;
 }
-
 .house-section::before {
   content: "";
   position: absolute;
@@ -183,35 +174,134 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
-
 .house-section h3 {
   color: #37b34a;
-  font-family:'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 40px;
   z-index: +1;
 }
-
 .house-info {
   width: 50%;
   color: #f7f7ff;
-  font-family: 'Robot', sans-serif;
+  font-family: "Robot", sans-serif;
   padding-top: 15px;
   font-size: 22px;
   z-index: +1;
 }
-
-/********* Fomulaire d'avis *********/
-
-.form-avis {
-  padding: 60px;
-  height: 400px;
+@media (max-width: 993px) {
+  .banner {
+    height: 350px;
+  }
+  .banner h2 {
+    font-size: 38px;
+  }
+  .banner-container-img {
+    height: 350px;
+  }
+  .banner-container-img img {
+    width: 200px;
+  }
+  .call-band {
+    height: 150px;
+  }
+  .call-btn-bloc h3,
+  .call-info h3 {
+    font-size: 30px;
+  }
+  .call-info p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .prestation h3 {
+    font-size: 30px;
+  }
+  .card img {
+    height: 180px;
+  }
+  .card span {
+    font-size: 20px;
+  }
+  .house-section {
+    height: 300px;
+  }
+  .house-section h3 {
+    font-size: 30px;
+  }
+  .house-info {
+    font-size: 18px;
+  }
 }
 
-.form-avis h3 {
-  padding-bottom: 40px;
-  font-family: "Helvetica", sans-serif;
-  color: #ee4036;
-  font-size: 40px;
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    padding: 10px 10px;
+  }
+  .banner h2 {
+    font-size: 26px;
+  }
+  .banner-container-tags {
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .banner-container-img {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .banner-container-img img {
+    width: 150px;
+  }
+  .call-band {
+    flex-direction: column;
+    height: auto;
+  }
+  .call-btn-bloc {
+    width: 100%;
+    height: 150px;
+    padding: 15px 15px;
+  }
+  .call-info {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .call-btn-bloc h3,
+  .call-info h3 {
+    font-size: 25px;
+  }
+  .call-info p {
+    font-size: 14px;
+  }
+  .prestation h3 {
+    font-size: 25px;
+  }
+  .Container-card {
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+  }
+  .card {
+    width: 70%;
+  }
+  .card img {
+    height: 100px;
+  }
+  .card span {
+    font-size: 18px;
+  }
+  .house-section {
+    height: 200px;
+  }
+  .house-section h3 {
+    font-size: 20px;
+  }
+  .house-info {
+    font-size: 14px;
+  }
 }
