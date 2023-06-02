@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("/assets/images/GohanJesse_Create_a_realistic_image_of_a_professional_pest_cont_819f6f1a-a855-4257-bd22-a7074ce938d9.png");
+  background-image: url("./assets/images/GohanJesse_Create_a_realistic_image_of_a_professional_pest_cont_819f6f1a-a855-4257-bd22-a7074ce938d9.png");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Opacité de 60% */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 0;
 }
 .banner-container-tags {
@@ -156,7 +156,7 @@
 
 .house-section {
   position: relative;
-  background-image: url(/assets/images/ronnie-george-z11gbBo13ro-unsplash.jpg);
+  background-image: url("./assets/images/ronnie-george-z11gbBo13ro-unsplash.jpg");
   height: 400px;
   width: 100%;
   background-size: cover;
