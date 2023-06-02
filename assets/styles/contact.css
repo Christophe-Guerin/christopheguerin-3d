@@ -53,6 +53,8 @@ section h2 {
   text-align: center;
 }
 .call-btn {
+  text-decoration: none;
+  display: inline-block;
   height: 50px;
   width: 220px;
   background-color: #37b34a;
@@ -64,6 +66,7 @@ section h2 {
   font-family: 'Helvetica', sans-serif;
   font-size: 20px;
   cursor: pointer;
+  padding-top: 5px;
 }
 .call-btn i {
   margin-right: 10px;
