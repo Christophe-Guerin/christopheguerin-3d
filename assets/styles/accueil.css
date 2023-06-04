@@ -62,7 +62,7 @@
   height: 50px;
   width: 220px;
   background-color: white;
-  color: #ee4036;
+  color: #B71810;
   border: none;
   border-radius: 50px;
   text-align: center;
@@ -89,7 +89,7 @@
   color: white;
 }
 .call-info h3 {
-  color: #ee4036;
+  color: #B71810;
 }
 .call-info p {
   font-family: "Roboto", sans-serif;
@@ -110,7 +110,7 @@
 .prestation h3 {
   padding-bottom: 40px;
   font-family: "Helvetica", sans-serif;
-  color: #ee4036;
+  color: #B71810;
   font-size: 40px;
 }
 .Container-card {

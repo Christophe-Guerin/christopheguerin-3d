@@ -120,7 +120,7 @@ h2 {
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ee4036;
+  color: #B71810;
   font-size: 30px;
 }
 
@@ -184,7 +184,7 @@ footer div ul li a {
 
 .siret-copy a {
   text-decoration: none;
-  color: #ee4036;
+  color: white;
 }
 
 @media (max-width: 994px) {
