@@ -1,8 +1,4 @@
 .about-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: auto;
   padding: 100px;
   box-sizing: border-box;
@@ -10,8 +6,6 @@
   color: #333;
 }
 .about-text {
-  display: flex;
-  flex-direction: column;
   grid-gap: 20px;
   max-width: 80%;
   color: #333;
@@ -20,13 +14,10 @@
 }
 .about-text h2 {
   letter-spacing: 1px;
-  color: #37b34a;
+  color: #267D33;
 }
 .about-image {
   max-width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .about-image img {
   height: 500px;

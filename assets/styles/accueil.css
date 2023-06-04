@@ -4,10 +4,9 @@
   position: relative;
   height: 500px;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("../images/GohanJesse_Create_a_realistic_image_of_a_professional_pest_cont_819f6f1a-a855-4257-bd22-a7074ce938d9.png");
+  background-image: url("../images/GohanJesse_Create_a_realistic_image_of_a_professional_pest_cont_819f6f1a-a855-4257-bd22-a7074ce938d9.webp");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -19,12 +18,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.7); 
   z-index: 0;
 }
 .banner-container-tags {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
   height: auto;
@@ -40,7 +37,6 @@
 }
 .banner-container-img {
   height: 500px;
-  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   z-index: +1;
@@ -51,19 +47,14 @@
 /********* Bande d'appel *********/
 
 .call-band {
-  display: flex;
   height: 200px;
   width: 100%;
 }
 .call-btn-bloc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 50%;
   padding: 60px 40px 60px 40px;
   grid-gap: 20px;
-  background-color: #37b34a;
+  background-color: #267D33;
 }
 .call-btn {
   display: inline-block;
@@ -86,10 +77,6 @@
 }
 .call-info {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   grid-gap: 20px;
   background-color: #dad7cd;
 }
@@ -114,8 +101,6 @@
 /********* Préstation *********/
 
 .prestation {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
@@ -129,15 +114,10 @@
   font-size: 40px;
 }
 .Container-card {
-  display: flex;
   justify-content: space-around;
   width: 100%;
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 30%;
   height: auto;
   background-color: #dad7cd;
@@ -158,13 +138,11 @@
 
 .house-section {
   position: relative;
-  background-image: url("../images/ronnie-george-z11gbBo13ro-unsplash.jpg");
+  background-image: url("../images/ronnie-george-z11gbBo13ro-unsplash.webp");
   height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 40px;
@@ -179,7 +157,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 .house-section h3 {
-  color: #37b34a;
+  color: #4CC85E;
   font-family: "Helvetica", sans-serif;
   font-size: 40px;
   z-index: +1;

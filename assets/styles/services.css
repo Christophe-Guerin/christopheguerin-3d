@@ -42,18 +42,10 @@ h3 {
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* padding: 10px; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .face-front {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background-color: #dad7cd;
   border-radius: 15px;
 }
@@ -68,16 +60,10 @@ h3 {
 }
 .caption-space {
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .face-back {
   background-color: #dad7cd;
   border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   transform: rotateY(180deg);
 }

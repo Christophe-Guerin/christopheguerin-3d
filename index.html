@@ -12,18 +12,53 @@
 
 
     <title>Christophe Guérin 3D - Votre expert en anti-nuisibles</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Christophe Guérin",
+        "url": "http://christopheguerin3d.fr/index.html",
+        "description": "Christophe Guérin - Services anti-nuisibles 3D. Je suis expert en désinsectisation, dératisation et désinfection, offrant des solutions efficaces",
+        "image": "https://christopheguerin3d.fr/assets/images/LogoSite.png",
+        "telephone": "0661710717",
+        "founder": {
+          "@type": "Person",
+          "name": "Christophe Guérin",
+          "jobTitle": "Services anti-nuisibles"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1 chemin de la pleine",
+          "addressLocality": "Les Martys",
+          "postalCode": "11390"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+          "http://schema.org/Monday",
+          "http://schema.org/Tuesday",
+          "http://schema.org/Wednesday",
+          "http://schema.org/Thursday",
+          "http://schema.org/Friday",
+          "http://schema.org/Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "19:00"
+        }
+        }		  
+      </script>
   </head>
-  <body>
-    <header>
+  <body class="flexCenter column">
+    <header class="flex">
       <h1>
         <a href="./index.html">
           <img src="./assets/images/LogoSite.png" alt="logo de christophe guerin 3D"/>
         </a>
       </h1>
-      <nav>
+      <nav class="flexCenter">
         <ul>
           <input type="checkbox" id="check">
-          <span class="menu">
+          <span class="menu flex">
             <li><a href="/index.html">Accueil</a></li>
             <li><a href="./pages/services.html">Services</a></li>
             <li><a href="./pages/infos.html">Infos</a></li>
@@ -36,24 +71,24 @@
       </nav>
     </header>
 
-    <main>
-      <section class="banner">
-        <div class="banner-container-tags">
+    <main class="flexCenter column">
+      <section class="banner flex">
+        <div class="banner-container-tags flex column">
           <h2>Désinsectisation</h2>
           <h2>Dératisation</h2>
           <h2>Désinfection</h2>
         </div>
-        <div class="banner-container-img">
-          <img id="logo-certibiocide" src="./assets/images/LOGO-CERTIBIOCIDE fr.webp" alt="">
+        <div class="banner-container-img flex">
+          <img id="logo-certibiocide" src="./assets/images/LOGO-CERTIBIOCIDE fr.webp" alt="logo certibiocide">
         </div>
       </section>
 
-      <section class="call-band">
-        <div class="call-btn-bloc">
+      <section class="call-band flex">
+        <div class="call-btn-bloc flexCenter column">
           <h3>Appelez moi !</h3>
           <a href="tel:0661710717" class="call-btn"><i class="fa-solid fa-phone fa-shake"></i> 0661710717</a>
         </div>
-        <div class="call-info">
+        <div class="call-info flexCenter column">
           <h3>J'interviens chez vous ?</h3>
           <p>
             Basé aux Martys, je me déplace dans le sud du Tarn et dans le nord le L'Aude.
@@ -61,25 +96,25 @@
         </div>
       </section>
 
-      <section class="prestation">
+      <section class="prestation flex column">
         <h3>Mes préstations</h3>
-        <div class="Container-card">
-          <div class="card">
-            <img src="./assets/images/mouse.png" alt="logo Dératisation">
+        <div class="Container-card flex">
+          <article class="card flexCenter column">
+            <img src="./assets/images/mouse.webp" alt="logo Dératisation">
             <span>Dératisation</span>
-          </div>
-          <div class="card">
-            <img src="./assets/images/Hornet.png" alt="logo Désinsectisation">
+          </article>
+          <article class="card flexCenter column">
+            <img src="./assets/images/Hornet.webp" alt="logo Désinsectisation">
             <span>Désinsectisation</span>
-          </div>
-          <div class="card">
-            <img src="./assets/images/bacterie.png" alt="logo Désinfection">
+          </article>
+          <article class="card flexCenter column">
+            <img src="./assets/images/bacterie.webp" alt="logo Désinfection">
             <span>Désinfection</span>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="house-section">
+      <section class="house-section flex column">
         <h3>Optez pour une maison saine</h3>
         <p class="house-info">
           Une maison saine est essentielle à un mode de vie sain. En ne laissant pas les nuisibles s'installer, vous protégez non seulement votre maison, mais aussi votre santé et celle de vos proches
@@ -88,31 +123,36 @@
 
     </main>
 
-    <footer>
-      <div class="footer-container-contact">
-        <ul>
-          <li><a href="./pages/contact.html">Contact</a></li>
-          <li><a href="./pages/contact.html">0661710717</a></li>
-          <li><a href="./pages/contact.html">Adresse</a></li>
-          <li><a href="./pages/contact.html">1 chemin de la pleine</a></li>
-          <li><a href="./pages/contact.html">11390 Les Martys</a></li>
-        </ul>
+    <footer class="flex column">
+      <div class="first-footer flexCenter">
+        <div class="footer-container-contact">
+          <ul class="flex column">
+            <li><a href="./pages/contact.html">Contact</a></li>
+            <li><a href="./pages/contact.html">0661710717</a></li>
+            <li><a href="./pages/contact.html">Adresse</a></li>
+            <li><a href="./pages/contact.html">1 chemin de la pleine</a></li>
+            <li><a href="./pages/contact.html">11390 Les Martys</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-dispo">
+          <ul class="flex column">
+            <li><a href="./pages/contact.html">Horaires</a></li>
+            <li><a href="./pages/contact.html">Du lundi au samedi</a></li>
+            <li><a href="./pages/contact.html">De 8h à 19h</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-structure">
+          <ul class="flex column">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/infos.html">Infos</a></li>
+            <li><a href="./pages/about.html">À propos</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-container-dispo">
-        <ul>
-          <li><a href="./pages/contact.html">Horaires</a></li>
-          <li><a href="./pages/contact.html">Du lundi au samedi</a></li>
-          <li><a href="./pages/contact.html">De 8h à 19h</a></li>
-        </ul>
-      </div>
-      <div class="footer-container-structure">
-        <ul>
-          <li><a href="./index.html">Accueil</a></li>
-          <li><a href="./pages/services.html">Services</a></li>
-          <li><a href="./pages/infos.html">Infos</a></li>
-          <li><a href="./pages/about.html">À propos</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-        </ul>
+      <div class="siret-copy flexCenter">
+        Créé par <a class="Creator-adress" href="https://github.com/GohanJesse">Jessy Godais</a> - 2023
       </div>
     </footer>
   </body>

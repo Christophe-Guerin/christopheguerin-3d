@@ -1,26 +1,28 @@
-.bloc-page {
-    width: 100%;
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bloc-page {
+    width: 100%;
     padding: 60px 0px;
 }
 .bloc-article{
     height: auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .article-container {
     width: 80%;
-    display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
 .section-title {
-    display: flex;
     justify-content: center;
     background-color: #ee4036;
     color: white;
@@ -28,9 +30,8 @@
     padding: 20px 0px;
 }
 .article-title {
-    display: flex;
     justify-content: center;
-    background-color: #37b34a;
+    background-color: #267D33;
     color: white;
     width: 100%;
     font-size: 20px;
@@ -40,8 +41,6 @@
     width: 73%;
 }
 .article {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0px 20px 20px 20px;

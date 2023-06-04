@@ -24,8 +24,6 @@ section h2 {
 .phone,
 .localisation,
 .email, .horaire {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
@@ -57,7 +55,7 @@ section h2 {
   display: inline-block;
   height: 50px;
   width: 220px;
-  background-color: #37b34a;
+  background-color: #267D33;
   color: white;
   border: none;
   border-radius: 50px;

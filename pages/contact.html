@@ -4,18 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contactez-nous - Christophe Guérin 3D. Vous avez une question ou besoin d'aide avec un problème de nuisibles ? Prenez contact avec moi dès aujourd'hui. Je suis là pour vous aider.">
+    <meta
+      name="description"
+      content="Contactez-nous - Christophe Guérin 3D. Vous avez une question ou besoin d'aide avec un problème de nuisibles ? Prenez contact avec moi dès aujourd'hui. Je suis là pour vous aider."
+    />
     <link rel="stylesheet" href="../assets/styles/general.css" />
     <link rel="stylesheet" href="../assets/styles/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@500&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/4c591a6d0d.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c591a6d0d.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Contactez-moi - Christophe Guérin 3D</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Contact - Christophe Guérin",
+        "url": "http://christopheguerin3d.fr/pages/contact.html",
+        "description": "Contactez-nous pour plus d'informations sur nos services de désinsectisation, dératisation et désinfection, ou pour prendre un rendez-vous. Nous sommes là pour vous aider à protéger votre maison.",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://christopheguerin3d.fr/contact"
+        },
+        "image": "https://christopheguerin3d.fr/assets/images/LogoSite.png",
+        "telephone": "0661710717",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1 chemin de la pleine",
+          "addressLocality": "Les Martys",
+          "postalCode": "11390"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "http://christopheguerin3d.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "http://christopheguerin3d.fr/contact"
+            }
+          ]
+        }
+      }
+    </script>
   </head>
-  <body>
-    <header>
+  <body class="flexCenter column">
+    <header class="flex">
       <h1>
         <a href="../index.html">
           <img
@@ -24,39 +71,49 @@
           />
         </a>
       </h1>
-      <nav>
+      <nav class="flexCenter">
         <ul>
-          <input type="checkbox" id="check">
-          <span class="menu">
+          <input type="checkbox" id="check" />
+          <span class="menu flex">
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./infos.html">Infos</a></li>
             <li><a href="./about.html">À propos</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            <label for="check" class="close-menu"><i class="fas fa-times fa-2xl"></i></label>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times fa-2xl"></i
+            ></label>
           </span>
-          <label for="check" class="open-menu"><i class="fas fa-bars fa-2xl"></i></label>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars fa-2xl"></i
+          ></label>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="flexCenter column">
       <section class="container-contact">
-        <div class="localisation">
+        <div class="localisation flex column">
           <h2>Trouvez-moi</h2>
           <div id="Gmap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.50660706426!2d2.2905759786050615!3d43.408241004414386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae3cced651ce5d%3A0x18be980d7c3ea2ee!2s1%20Chem.%20de%20la%20Plaine%2C%2011390%20Les%20Martys!5e0!3m2!1sfr!2sfr!4v1685576285676!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.50660706426!2d2.2905759786050615!3d43.408241004414386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae3cced651ce5d%3A0x18be980d7c3ea2ee!2s1%20Chem.%20de%20la%20Plaine%2C%2011390%20Les%20Martys!5e0!3m2!1sfr!2sfr!4v1685576285676!5m2!1sfr!2sfr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
-        <div class="phone">
+        <div class="phone flex column">
           <h2>Appelez moi</h2>
           <a href="tel:0661710717" class="call-btn">
             <i class="fa-solid fa-phone fa-shake"></i> 0661710717
           </a>
         </div>
 
-        <div class="horaire">
+        <div class="horaire flex column">
           <h2>Horaires</h2>
           <p>
             Du lundi au samedi <br />
@@ -64,38 +121,45 @@
           </p>
         </div>
 
-        <div class="email">
+        <div class="email flex column">
           <h2>Ecrivez-moi</h2>
-          <a href="mailto:christopheguerin3d@email.com" class="call-btn">Boite Mail</a>
+          <a href="mailto:christopheguerin3d@email.com" class="call-btn"
+            >Boite Mail</a
+          >
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer-container-contact">
-        <ul>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./contact.html">0661710717</a></li>
-          <li><a href="./contact.html">Adresse</a></li>
-          <li><a href="./contact.html">1 chemin de la plaine</a></li>
-          <li><a href="./contact.html">11390 Les Martys</a></li>
-        </ul>
+    <footer class="flex column">
+      <div class="first-footer flexCenter">
+        <div class="footer-container-contact">
+          <ul class="flex column">
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.html">0661710717</a></li>
+            <li><a href="./contact.html">Adresse</a></li>
+            <li><a href="./contact.html">1 chemin de la plaine</a></li>
+            <li><a href="./contact.html">11390 Les Martys</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-dispo">
+          <ul class="flex column">
+            <li><a href="./contact.html">Horaires</a></li>
+            <li><a href="./contact.html">Du lundi au samedi</a></li>
+            <li><a href="./contact.html">De 8h à 19h</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-structure">
+          <ul class="flex column">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./infos.html">Infos</a></li>
+            <li><a href="./about.html">À propos</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-container-dispo">
-        <ul>
-          <li><a href="./contact.html">Horaires</a></li>
-          <li><a href="./contact.html">Du lundi au samedi</a></li>
-          <li><a href="./contact.html">De 8h à 19h</a></li>
-        </ul>
-      </div>
-      <div class="footer-container-structure">
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./infos.html">Infos</a></li>
-          <li><a href="./about.html">À propos</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
+      <div class="siret-copy flexCenter">
+        Créé par <a class="Creator-adress" href="https://github.com/GohanJesse">Jessy Godais</a> - 2023
       </div>
     </footer>
   </body>
