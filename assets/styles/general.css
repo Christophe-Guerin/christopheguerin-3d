@@ -184,7 +184,8 @@ footer div ul li a {
   border-top: white 1px solid;
 }
 
-.siret-copy a {
+.siret-copy a,
+.siret-copy p {
   text-decoration: none;
   color: white;
 }
