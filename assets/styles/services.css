@@ -76,6 +76,10 @@ h3 {
   font-family: 'Roboto', sans-serif;
   padding: 0 15px;
 }
+.face-back p a {
+  color: red;
+  text-decoration: none;
+}
 .card:hover {
   transform: rotateY(180deg);
 }
