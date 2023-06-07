@@ -42,6 +42,9 @@ section h2 {
 .localisation {
   grid-area: localisation;
 }
+#Gmap {
+  width: 100%;
+}
 .email {
   grid-area: email;
 }
