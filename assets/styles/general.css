@@ -76,6 +76,18 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+.links-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.links-bar a img {
+  height: 48px;
+}
+
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -192,7 +204,7 @@ footer div ul li a {
 
 @media (max-width: 994px) {
   nav ul li a {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -214,6 +226,14 @@ footer div ul li a {
     z-index: 100;
     background-color: white;
     transition: all 0.2s ease-in-out;
+  }
+
+  .links-bar {
+    flex-direction: row;
+  }
+
+  .links-bar img {
+    padding: 0;
   }
 
   .open-menu,
