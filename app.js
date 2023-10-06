@@ -135,3 +135,37 @@ document.addEventListener("DOMContentLoaded", function () {
     elementObserver.observe(element);
   });
 });
+
+// Animations des éléments dans Contact
+
+document.addEventListener("DOMContentLoaded", function () {
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    setTimeout(() => {
+      document.querySelector(".horaire").classList.add("animated");
+    }, 200);
+    setTimeout(() => {
+      document.querySelector(".phone").classList.add("animated");
+    }, 700);
+    setTimeout(() => {
+      document.querySelector(".localisation").classList.add("animated");
+    }, 1200);
+    setTimeout(() => {
+      document.querySelector(".email").classList.add("animated");
+    }, 1700);
+  } else {
+    setTimeout(() => {
+      document.querySelector(".localisation").classList.add("animated");
+    }, 500);
+    setTimeout(() => {
+      document.querySelector(".phone").classList.add("animated");
+    }, 1000);
+    setTimeout(() => {
+      document.querySelector(".horaire").classList.add("animated");
+    }, 1500);
+    setTimeout(() => {
+      document.querySelector(".email").classList.add("animated");
+    }, 2000);
+  }
+});
