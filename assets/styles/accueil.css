@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 .banner-container-tags {
@@ -54,7 +54,19 @@
   width: 50%;
   padding: 60px 40px 60px 40px;
   grid-gap: 20px;
-  background-color: #267D33;
+  background-color: #267d33;
+  animation: slideFromLeft 1s forwards;
+  opacity: 0;
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .call-btn {
   display: inline-block;
@@ -62,7 +74,7 @@
   height: 50px;
   width: 220px;
   background-color: white;
-  color: #B71810;
+  color: #b71810;
   border: none;
   border-radius: 50px;
   text-align: center;
@@ -79,6 +91,18 @@
   width: 50%;
   grid-gap: 20px;
   background-color: #dad7cd;
+  animation: slideFromRight 1s forwards;
+  opacity: 0;
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .call-btn-bloc h3,
 .call-info h3 {
@@ -89,7 +113,7 @@
   color: white;
 }
 .call-info h3 {
-  color: #B71810;
+  color: #b71810;
 }
 .call-info p {
   font-family: "Roboto", sans-serif;
@@ -110,7 +134,7 @@
 .prestation h3 {
   padding-bottom: 40px;
   font-family: "Helvetica", sans-serif;
-  color: #B71810;
+  color: #b71810;
   font-size: 40px;
 }
 .Container-card {
@@ -125,7 +149,16 @@
   padding-top: 30px;
   padding-bottom: 30px;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s;
 }
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card img {
   height: 232px;
 }
@@ -157,7 +190,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 .house-section h3 {
-  color: #4CC85E;
+  color: #4cc85e;
   font-family: "Helvetica", sans-serif;
   font-size: 40px;
   z-index: +1;

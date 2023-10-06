@@ -42,6 +42,11 @@ header {
   width: 100%;
 }
 
+.home-header {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /*Change here*/
+}
+
 header img {
   height: 147px;
 }
@@ -132,7 +137,7 @@ h2 {
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: #B71810;
+  color: #b71810;
   font-size: 30px;
 }
 
@@ -260,7 +265,6 @@ footer div ul li a {
   .footer-container-structure {
     width: 100%;
   }
-
 
   footer div {
     width: 100%;
